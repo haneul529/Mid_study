@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE BookCatalog[
+    <!ELEMENT BookCatalog (Book*)>
+    <!ELEMENT Book ((BookCode|Title), CoAuthor, Year, Summary)>
+    <!ELEMENT Title (#PCDATA)>
+    <!ELEMENT CoAuthor (#PCDATA | Author)>
+    <!ELEMENT Author (#PCDATA)>
+    <!ELEMENT Year (#PCDATA)>
+    <!ELEMENT Summary ANY> 
+    <!ATTLIST Book lang CDATA "언어">
+]>
+<BookCatalog>
+    <Book lang="eng">
+        <Title>슈퍼해빗</Title>
+        <CoAuthor>
+            저자 : <Author>케이티 밀크먼</Author>
+            옮긴 이 : <Author>박세연 옮김</Author>
+        </CoAuthor>
+        <Year>2022</Year>
+        <Summary>
+        성공, 목표 달성, 변화의 열쇠는 '습관'
+        그런데 왜 우리는 여전히 실패하는가?
+        </Summary>
+    </Book>
+    <Book lang="eng">
+        <Title>퓨처셀프</Title>
+        <CoAuthor>
+            저자 : <Author>벤자민 하디</Author>
+            옮긴 이 : <Author>최은아 옮김</Author>
+        </CoAuthor>
+        <Year>2023</Year>
+        <Summary>
+        현재와 미래를 더 가치 있게 바꾸고 싶다면, '미래의 나'와 연결하라!
+        </Summary>
+    </Book>
+    <Book lang="jpn">
+        <Title>유리 멘탈이지만 절대 깨지지 않아</Title>
+        <CoAuthor>
+            저자 : <Author>기무라 코노미</Author>
+            옮긴 이 : <Author>오정화 옮김</Author>
+        </CoAuthor>
+        <Year>2023</Year>
+        <Summary>
+        멘탈이 강하다고 해서 성공하는 것은 아니다.
+        기존쎄가 늘 행복한 것은 아니다.
+        나의 유리 멘탈을 보호해줄 말랑말랑한 생각 습관
+        멘탈 커버 한 장을 덧대는 것만으로 섬세함이 강점이 되고 약점이 매력이 된다.
+        </Summary>
+    </Book>
+</BookCatalog>
